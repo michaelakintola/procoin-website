@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  text-align: center;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  /* ensures it stays on top */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  background-color: #ddd;
+  border: #fff solid 3px;
+  color: #fff;
+  padding: 7px;
+  border-radius: 10%;
+  background-color: transparent;
+}
+
+.nav-links a.active {
+  background-color: transparent;
+  /* green button background */
+  color: white;
+  font-weight: 600;
+  border: #fff solid 3px;
+  padding: 7px;
+  border-radius: 10%;
+}
+
+/* Normal hover for non-active links */
+.nav-links a:not(.active):hover {
+  background-color: #ddd;
+  color: #333;
+}
+
+/* Active link style */
+.nav-links a.active {
+
+  /* green */
+  color: white;
+  font-weight: 600;
+}
+
+/* Keep active style on hover */
+.nav-links a.active:hover {
+  /* same green, no change */
+  color: white;
+}
+
+footer {
+  background: #030029;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  bottom: 0;
+}
+
+main {
+  min-height: calc(100vh - 160px);
+  /* Adjusting for header and footer height */
+}
+
+
+
+
+
+/* Style the navigation bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #030029;
+  padding: 10px 20px;
+}
+
+/* Style the logo */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+}
+.logo img {
+  width: 5%;
+}
+
+/* Make the nav links horizontal */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  /* space between links */
+
+}
+
+/* Style individual nav links */
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #007BFF;
+  /* blue on hover */
+}
+
+.hero-overlay {
+  position: relative;
+  width: 100%;
+  /* max-height: 400px; */
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hero-overlay img {
+  width: 100%;
+  height: 700px;
+  display: block;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  color: #030029;
+  text-align: center;
+
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.auth-buttons a {
+  padding: 2px 25px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  
+  transition: background-color 0.3s;
+}
+
+.login-btn {
+  background-color: transparent;
+  color: #e1f504;
+  border: 2px solid #e1f504;
+}
+
+.login-btn:hover {
+  background-color: #e1f504;
+  color: white;
+}
+
+.signup-btn {
+  background-color: #e1f504;
+  color: white;
+  border: 2px solid #e1f504;
+}
+
+.signup-btn:hover {
+  background-color: #61662a;
+}

@@ -1,0 +1,134 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  /* Top Navbar */
+  .top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: #030029;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1000;
+  }
+  
+  .top-nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .top-nav .logo img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  #logoutBtn {
+    background-color: #fff;
+    color: #030029;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #logoutBtn:hover {
+    background-color: #e2e2e2;
+  }
+  
+  /* Side Navigation */
+  .side-nav {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 200px;
+    height: calc(100% - 60px);
+    background-color: #1e1e2f;
+    color: white;
+    padding-top: 20px;
+  }
+  
+  .side-nav ul {
+    list-style: none;
+  }
+  
+  .side-nav li {
+    margin-bottom: 15px;
+  }
+  
+  .side-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+  }
+  
+  .side-nav a:hover {
+    background-color: #33334d;
+  }
+  
+  /* Dashboard Content */
+  .dashboard-content {
+    margin-left: 200px;
+    margin-top: 60px;
+    padding: 30px;
+    flex: 1;
+  }
+  
+  .card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  
+  #transactionList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #transactionList li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .investment-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+  }
+  .invest-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #030029;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    width: fit-content;
+    justify-self: end;
+  }
+  .invest-button:hover {
+    background-color: #1f1f4d;
+  }

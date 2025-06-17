@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - ProCoin</title>
+    <link rel="stylesheet" href="../CSS/Home.css">
+    <link rel="stylesheet" href="../CSS/Coin.css">
+    <link rel="stylesheet" href="../CSS/Service.css">
+    <link rel="stylesheet" href="../CSS/About.css">
+    <link rel="stylesheet" href="../CSS/Contact.css">
+    <link rel="stylesheet" href="../../CSS/Dashboard/homeD.css">
+</head>
+
+<body>
+    <!-- Top Navbar -->
+    <header class="top-nav">
+        <div class="logo">
+            <img src="../../Images/ProCoin2.png" alt="Logo">
+            ProCoin
+        </div>
+        <button id="logoutBtn">Logout</button>
+    </header>
+
+    <!-- Sidebar Navigation -->
+    <aside class="side-nav">
+        <nav>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#investment">My Investment</a></li>
+                <li><a href="#history">Transaction History</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="dashboard-content">
+        <section id="overview" class="card">
+            <h2>Welcome, <span id="username"></span></h2>
+        </section>
+
+        <section id="investment" class="card">
+            <h2>Investment Summary</h2>
+            <div class="investment-grid">
+                <!-- This must be present -->
+                <p>Amount Invested: $<span id="investmentAmount">0.00</span></p>
+                <a href="../../HTML/payment.html" class="invest-button">Invest Now</a>
+            </div>
+            <!-- <div class="investment-grid">
+                <input type="number" id="dashAmountInput" placeholder="Enter amount to invest" />
+                <button id="dashInvestBtn">Submit Investment</button>
+            </div> -->
+        </section>
+
+        <section id="history" class="card">
+            <h2>Transaction History</h2>
+            <ul id="transactionList"></ul>
+        </section>
+    </main>
+    <script defer src="../../JS/Dashboard.js"></script>
+    <script src="../JS/ProCoin.js"></script>
+    <script src="../JS/Access.js"></script>
+
+</body>
+
+</html>
